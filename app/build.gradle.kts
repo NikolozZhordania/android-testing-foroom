@@ -65,5 +65,7 @@ dependencies {
     coreLibraryDesugaring(libs.android.desugaring)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation("androidx.test.ext:junit-ktx:1.1.5")
+    androidTestImplementation("com.github.javafaker:javafaker:1.0.2")
     androidTestImplementation(libs.androidx.espresso.core)
 }
