@@ -18,8 +18,9 @@ import org.junit.runners.MethodSorters
 @LargeTest
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class AuthenticationFlow : BaseTest() {
+
     @Test
-    fun test1_userRegistrationFlow() {
+    fun TC1_userRegistrationFlow() {
         loginSteps
             .clickSignUpButton()
         registrationSteps
@@ -34,7 +35,7 @@ class AuthenticationFlow : BaseTest() {
     }
 
     @Test
-    fun test2_userLogOutFlow() {
+    fun TC2_userLogOutFlow() {
         navBarSteps
             .profileButtonVisibilityValidation()
             .profilePageNavigation()
@@ -44,7 +45,7 @@ class AuthenticationFlow : BaseTest() {
     }
 
     @Test
-    fun test3_validateInvalidPassword_onLoginPage() {
+    fun TC3_validateInvalidPassword_onLoginPage() {
         loginSteps
             .typeUsername(username)
             .typePassword(INVALID_PASSWORD)
@@ -57,7 +58,7 @@ class AuthenticationFlow : BaseTest() {
     }
 
     @Test
-    fun test4_validateInvalidUserAndPassword_onLoginPage() {
+    fun TC4_validateInvalidUserAndPassword_onLoginPage() {
         loginSteps
             .typeUsername(INVALID_USERNAME)
             .typePassword(password)

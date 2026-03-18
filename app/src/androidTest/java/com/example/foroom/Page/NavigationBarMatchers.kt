@@ -13,4 +13,8 @@ object NavigationBarMatchers {
     val profileButton: Matcher<View> by lazy { allOf(
         isDescendantOfA(navBarContainer),
         withId(R.id.homeNavigationProfile)) }
+
+    val createChatButton: Matcher<View> by lazy { allOf(
+        isDescendantOfA(navBarContainer),
+        withId(R.id.homeNavigationCreateChat)) }
 }
