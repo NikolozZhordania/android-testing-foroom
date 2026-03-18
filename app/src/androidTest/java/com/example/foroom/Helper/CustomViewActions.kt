@@ -646,3 +646,13 @@ private fun withMatcherPredicate(matcher: Matcher<View>): Predicate<View?> {
     return Predicate<View?> { view -> matcher.matches(view) }
 }
 
+fun withIndex(index: Int): Matcher<View> = object : TypeSafeMatcher<View>() {
+    private var currentIndex = 0
+    override fun describeTo(description: Description) {
+        description.appendText("with index $index")
+    }
+    override fun matchesSafely(view: View): Boolean {
+        return currentIndex++ == index
+    }
+}
+

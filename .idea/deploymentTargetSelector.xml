@@ -13,19 +13,19 @@
         </DropdownSelection>
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="AuthenticationFlow">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
       <SelectionState runConfigName="userPasswordUpdate()">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
       <SelectionState runConfigName="UserProfileTests">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="changeLanguageValidation()">
+      <SelectionState runConfigName="createChat()">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="createChat()">
+      <SelectionState runConfigName="sendMessageToExistingChat()">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="TC3_exchangeMessagesBetweenUsers()">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

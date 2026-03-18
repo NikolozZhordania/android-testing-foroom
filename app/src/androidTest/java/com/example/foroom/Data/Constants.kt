@@ -13,7 +13,11 @@ object Constants {
 
     const val VALID_USERNAME = "Nika140"
 
+    const val VALID_USERNAME_2 = "Nika141"
+
     const val VALID_PASSWORD = "Nika1234$#@!"
+
+    const val VALID_PASSWORD_2 = "Nika1234$#@!!"
 
     const val MESSAGE = "Full Name"
 
@@ -24,4 +28,20 @@ object Constants {
     const val LANGUAGE_NAME_ENG_GE = "ინგლისური"
 
     const val LANGUAGE_NAME_ENG_EN = "English"
+
+    const val TARGET_CHAT = "something"
+
+    const val TARGET_CHAT_AUTHOR = "user"
+
+    const val GREETING = "Hey! How are you?"
+
+    const val REPLY = "Hi! I'm doing great, thanks!"
+
+    const val CHAT_NAME = "johnWeek"
+
+    const val AUTHOR_NAME = "Maxara123"
+
+    const val CHAT_MESSAGE = "let's go for a drink"
+
+    const val CHAT_MESSAGE_2 = "Which module do you like the most in the Automation Academy?"
 }
