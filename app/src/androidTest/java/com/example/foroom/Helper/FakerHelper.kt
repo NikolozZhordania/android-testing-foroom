@@ -18,4 +18,10 @@ object FakerHelper {
             true, 
             false)}1!"
     }
+
+    fun generateRandomChatName(): String {
+        return "${faker.harryPotter().spell()
+            .replace(" ", "_")
+            .uppercase()}_${faker.number().digits(3)}"
+    }
 }

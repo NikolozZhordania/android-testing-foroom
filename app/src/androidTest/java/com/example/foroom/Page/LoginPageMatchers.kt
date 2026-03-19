@@ -1,31 +1,35 @@
 package com.example.foroom.Page
 
 import android.view.View
-import android.widget.EditText
-import androidx.test.espresso.matcher.ViewMatchers.isAssignableFrom
 import androidx.test.espresso.matcher.ViewMatchers.isDescendantOfA
+import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import com.alternator.foroom.R
+import com.example.foroom.Helper.withIndex
 import org.hamcrest.Matcher
 import org.hamcrest.Matchers.anyOf
 import org.hamcrest.core.AllOf.allOf
-import kotlin.jvm.java
 
 object LoginPageMatchers {
-    val usernameInput: Matcher<View> by lazy {
+    fun usernameInput(index: Int = 0): Matcher<View> = withIndex(
         allOf(
+            withId(com.example.design_system.R.id.inputEditText),
             isDescendantOfA(withId(R.id.userNameInput)),
-            isAssignableFrom(EditText::class.java)
-        )
-    }
-
-    val passwordInput: Matcher<View> by lazy {
+            withText(""),
+            isDisplayed()
+        ),
+        index = index
+    )
+    fun passwordInput(index: Int = 0): Matcher<View> = withIndex(
         allOf(
+            withId(com.example.design_system.R.id.inputEditText),
             isDescendantOfA(withId(R.id.passwordInput)),
-            isAssignableFrom(EditText::class.java)
-        )
-    }
+            withText(""),
+            isDisplayed()
+        ),
+        index = index
+    )
 
     val loginButton: Matcher<View> by lazy { allOf(
         withId(R.id.logInButton),

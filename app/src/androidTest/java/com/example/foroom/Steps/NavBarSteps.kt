@@ -19,4 +19,9 @@ class NavBarSteps {
         return this
     }
 
+    fun clickCreateNewChatButton(): NavBarSteps{
+        NavigationBarMatchers.createChatButton.tap()
+        return this
+    }
+
 }
